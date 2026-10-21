@@ -1,7 +1,7 @@
 import {FastOpeningSequence} from '../js/fast-opening-sequence.mjs';
 import {SequenceSeek,decodeSequenceState} from '../js/sequence-seek.mjs';
 const hex=b=>Array.from(b,v=>v.toString(16).padStart(2,'0')).join(''),sha=async b=>hex(new Uint8Array(await crypto.subtle.digest('SHA-256',b)));
-async function fetchChecked(url){const r=await fetch(url);if(!r.ok)throw new Error(`Loading failed (${r.status})`);return r;}
+async function fetchChecked(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(`Loading failed (${r.status})`);return r;}
 let ready,state,queue=Promise.resolve(),latestRequest;
 async function load(){
  const metadataText=await(await fetchChecked(new URL('./assets/opening-20s.json',import.meta.url))).text();

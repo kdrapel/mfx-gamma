@@ -5,7 +5,7 @@
   "comparison": {
     "reference": "oracle/reference/opening-boundary-d699f4b94fcb",
     "reference_sha256": "48bcdab982429d98e5c5e8591e82f00c92c48f3c5b47d7b6a85cfa8ca5662d7c",
-    "report_sha256": "953f255eb6d13ff1e88882c6f1f04516fc44a7297d307d8f5afb353d89213beb",
+    "report_sha256": "76639fbb811e1c07f9ed680633909502732e8aa56fd9bdca99f60bea46f2078b",
     "frames": 275,
     "scope": "Boundary oracle: original code under same captured-resource reset and virtual PIT; every frame full RAM/registers/FPU and displayed data. Stop at the original main-loop exit flag before DOS cleanup. No per-instruction or all-write digest; no DOSBox/backend or hardware timing claim."
   },
@@ -17,7 +17,7 @@
   "sources": [
     {
       "path": "player/index.html",
-      "sha256": "3196c0baf1215a24c2a52c3d25b7f5d7322cdddc5ff58f828d4419617ab7c2f6",
+      "sha256": "5b9cb592d9cfe1da63f8275aa9c0324815691ea3090ff0574459d7c65cbdc8d1",
       "transformed": true
     },
     {
@@ -32,17 +32,17 @@
     },
     {
       "path": "player/preview.mjs",
-      "sha256": "198034cc1fd37588e86bac1686dcd13f288bcb60a3b8de274e25563f155763ac",
+      "sha256": "c1f503b9bdc063b65bfa4087f538e4a6415421631bfa709289ad5a544fa2322f",
       "transformed": true
     },
     {
       "path": "player/opening-worker.mjs",
-      "sha256": "9741e9b869d2c607b6c98857110eb334b04230065cdf82981f8a338856d98d22",
+      "sha256": "fa2fc910f1f981b777bdcff198ee7db6cc0ef26d2ee2b0abd05e8ea217b8444e",
       "transformed": false
     },
     {
       "path": "player/audio-worker.mjs",
-      "sha256": "af363a0c8d9dff943d2b2b919917825e7d1c1304e82216d71b28acc9c0c2d856",
+      "sha256": "c8c85b6a78dbc0b02fdc7d61f93f170b70fc9330992076badc48902e873e4298",
       "transformed": false
     },
     {
@@ -229,8 +229,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 4150,
-      "sha256": "152fb758fa98b73e72305fc6b1941abf8736706cfdbabbd96edbbbdbe645c0b6"
+      "bytes": 4152,
+      "sha256": "3bdb0b19a7cc607118cbc74162755318d197f3be8ef0dd3f2eea02142fb1ce58"
     },
     {
       "path": "js/fast-fpu.mjs",
@@ -404,23 +404,23 @@
     },
     {
       "path": "player/audio-worker.mjs",
-      "bytes": 2185,
-      "sha256": "af363a0c8d9dff943d2b2b919917825e7d1c1304e82216d71b28acc9c0c2d856"
+      "bytes": 2227,
+      "sha256": "c8c85b6a78dbc0b02fdc7d61f93f170b70fc9330992076badc48902e873e4298"
     },
     {
       "path": "player/index.html",
-      "bytes": 4125,
-      "sha256": "3196c0baf1215a24c2a52c3d25b7f5d7322cdddc5ff58f828d4419617ab7c2f6"
+      "bytes": 4127,
+      "sha256": "5b9cb592d9cfe1da63f8275aa9c0324815691ea3090ff0574459d7c65cbdc8d1"
     },
     {
       "path": "player/opening-worker.mjs",
-      "bytes": 7793,
-      "sha256": "9741e9b869d2c607b6c98857110eb334b04230065cdf82981f8a338856d98d22"
+      "bytes": 7812,
+      "sha256": "fa2fc910f1f981b777bdcff198ee7db6cc0ef26d2ee2b0abd05e8ea217b8444e"
     },
     {
       "path": "player/preview.mjs",
-      "bytes": 12462,
-      "sha256": "198034cc1fd37588e86bac1686dcd13f288bcb60a3b8de274e25563f155763ac"
+      "bytes": 12473,
+      "sha256": "c1f503b9bdc063b65bfa4087f538e4a6415421631bfa709289ad5a544fa2322f"
     },
     {
       "path": "player/theme.css",

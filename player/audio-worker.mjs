@@ -1,6 +1,6 @@
 import {NativeMusic,AUDIO_RATE} from '../js/native-music.mjs';
 const hash=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
-async function checked(url){const r=await fetch(url);if(!r.ok)throw Error(`Audio input load failed (${r.status})`);return r;}
+async function checked(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error(`Audio input load failed (${r.status})`);return r;}
 onmessage=async({data})=>{if(data.type!=='prepare')return;try{
  const duration=data.duration??145;if(duration!==145)throw Error('Unsupported soundtrack duration');
  const meta=await(await checked(new URL('./assets/audio.json',import.meta.url))).json();

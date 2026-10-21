@@ -10,7 +10,7 @@ let worker,busy=false,seeking=false,starting=false,mode='paused',pending=null,fa
 let computeFps='— FPS',frameCosts=[];
 let playhead=0,lastElapsed=0;
 const audioStatus=document.querySelector('#audio-status'),mute=document.querySelector('#mute');
-const music=new MusicPlayback(new URL('./audio-worker.mjs?v=music-1',import.meta.url),{
+const music=new MusicPlayback(new URL('./audio-worker.mjs?v=github-cache-2',import.meta.url),{
  muted:new URLSearchParams(location.search).get('mute')==='1',
  onProgress:percent=>{audioStatus.textContent=`Preparing original music… ${percent}%`;start.textContent=`Preparing · ${percent}%`;},
  onReady:()=>{audioStatus.textContent='Original music ready';controls();},
@@ -68,7 +68,7 @@ function show(data){
  if(mode==='playing')compute();
 }
 function reset(){
- worker?.terminate();worker=new Worker(new URL('./opening-worker.mjs?v=chapters-1',import.meta.url),{type:'module'});requestId++;
+ worker?.terminate();worker=new Worker(new URL('./opening-worker.mjs?v=github-cache-2',import.meta.url),{type:'module'});requestId++;
  clearTimeout(computeTimer);music.seek(0);
  scrubbing=false;timeline.value='0';presentedTimes=[];
  busy=false;seeking=false;starting=false;pending=null;failed=false;ended=false;frame=0;mode='step';playhead=0;lastElapsed=0;frameCosts=[];computeFps='— FPS';window.gammaPreviewResult=null;window.gammaPreviewTrace=[];window.gammaAVTrace=[];
