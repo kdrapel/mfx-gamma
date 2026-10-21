@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "seed_file": "opening-seed.bin.gz",
+  "seed_sha256": "1a993ff83069f95786e896d1d1e2dbf24e89bc5a94ad00bef7abcd1857660bb7",
+  "initial_registers": {
+    "eax": 0,
+    "ebx": 1509124,
+    "ecx": 17024,
+    "edx": 2303208,
+    "esi": 1561606,
+    "edi": 2256804,
+    "ebp": 1521988,
+    "esp": 2555900,
+    "eip": 96062,
+    "eflags": 12802,
+    "cs": 2144,
+    "ds": 2136,
+    "es": 2136,
+    "fs": 2112,
+    "gs": 2120,
+    "ss": 2136
+  },
+  "mutations": [
+    {
+      "address": 1522067,
+      "hex": "20020000",
+      "reason": "Controlled enabled GUS instead of captured disabled device"
+    }
+  ],
+  "initialization": [
+    {
+      "entry": 96062,
+      "stop": 96067,
+      "calls": 1
+    },
+    {
+      "entry": 97603,
+      "stop": 97709,
+      "calls": 1,
+      "registers": {
+        "eax": 0
+      }
+    }
+  ],
+  "write_ranges": [
+    [
+      1521988,
+      1538372
+    ],
+    [
+      2547712,
+      2555904
+    ]
+  ],
+  "sample_rate": 48000,
+  "reference": {
+    "path": "oracle/reference/music-pcm-start-1024-000/result.json",
+    "sha256": "b1efd2fe01a96faab309cbc83f8c86564d02e872b55e47b690ad6327a2758fe1"
+  },
+  "profile": "controlled_GUS_fixed48000_PCM_candidate",
+  "scope": "Original decoded samples and upload/reset/tracker routines. Explicit enabled GUS base; fixed-48000 device candidate with synchronous stop-ramp polling. No captured-audio or hardware-equivalence claim."
+}

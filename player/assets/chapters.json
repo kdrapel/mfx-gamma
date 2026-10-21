@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "source_sha256": "b2aa842fad1a5d3d397652d45598c00e441d36f54c454f2a28bc1fe2bd2c9914",
+  "scope": "First validated sample after selected original script changes; descriptive labels, not exact transition timing.",
+  "chapters": [
+    {
+      "id": "chapter-0",
+      "title": "Opening",
+      "frame": 1,
+      "seconds": 0.02514285331156521,
+      "time_counts": 30000,
+      "script_pointer": 1515188
+    },
+    {
+      "id": "chapter-1",
+      "title": "Gamma title",
+      "frame": 8,
+      "seconds": 3.6883006951160846,
+      "time_counts": 4400814,
+      "script_pointer": 1515220
+    },
+    {
+      "id": "chapter-2",
+      "title": "MFX",
+      "frame": 21,
+      "seconds": 10.491308115610192,
+      "time_counts": 12518040,
+      "script_pointer": 1515572
+    },
+    {
+      "id": "chapter-3",
+      "title": "Floating spheres",
+      "frame": 34,
+      "seconds": 17.2943155361043,
+      "time_counts": 20635266,
+      "script_pointer": 1515796
+    },
+    {
+      "id": "chapter-4",
+      "title": "Spheres in the room",
+      "frame": 67,
+      "seconds": 34.563488218897035,
+      "time_counts": 41240532,
+      "script_pointer": 1515956
+    },
+    {
+      "id": "chapter-5",
+      "title": "Lights and flares",
+      "frame": 85,
+      "seconds": 43.9830369549658,
+      "time_counts": 52479768,
+      "script_pointer": 1516180
+    },
+    {
+      "id": "chapter-6",
+      "title": "Moving room",
+      "frame": 98,
+      "seconds": 50.7860443754599,
+      "time_counts": 60596994,
+      "script_pointer": 1516308
+    },
+    {
+      "id": "chapter-7",
+      "title": "Colour transitions",
+      "frame": 121,
+      "seconds": 62.82213442710333,
+      "time_counts": 74958240,
+      "script_pointer": 1516340
+    },
+    {
+      "id": "chapter-8",
+      "title": "Colour sequence I",
+      "frame": 124,
+      "seconds": 64.39205921644812,
+      "time_counts": 76831446,
+      "script_pointer": 1516564
+    },
+    {
+      "id": "chapter-9",
+      "title": "Colour sequence II",
+      "frame": 150,
+      "seconds": 77.99807405743634,
+      "time_counts": 93065898,
+      "script_pointer": 1516788
+    },
+    {
+      "id": "chapter-10",
+      "title": "Flashing room",
+      "frame": 176,
+      "seconds": 91.60408889842455,
+      "time_counts": 109300350,
+      "script_pointer": 1516980
+    },
+    {
+      "id": "chapter-11",
+      "title": "Refraction transition",
+      "frame": 203,
+      "seconds": 105.7334120025277,
+      "time_counts": 126159204,
+      "script_pointer": 1517204
+    },
+    {
+      "id": "chapter-12",
+      "title": "Angular geometry",
+      "frame": 210,
+      "seconds": 109.39656984433222,
+      "time_counts": 130530018,
+      "script_pointer": 1517364
+    },
+    {
+      "id": "chapter-13",
+      "title": "Refraction",
+      "frame": 236,
+      "seconds": 123.00258468532043,
+      "time_counts": 146764470,
+      "script_pointer": 1517428
+    },
+    {
+      "id": "chapter-14",
+      "title": "Credits",
+      "frame": 262,
+      "seconds": 136.60859952630864,
+      "time_counts": 162998922,
+      "script_pointer": 1517908
+    }
+  ]
+}

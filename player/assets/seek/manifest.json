@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "pass": true,
+  "frames": 275,
+  "metadata_sha256": "b2aa842fad1a5d3d397652d45598c00e441d36f54c454f2a28bc1fe2bd2c9914",
+  "plan_sha256": "37efb4e250314073d13ff7ee867feeaa65c2abb33404365dcaf0b90f366f83bd",
+  "reference": {
+    "kind": "live_boundary",
+    "frames": 275,
+    "reference": "oracle/reference/opening-boundary-d699f4b94fcb",
+    "reference_sha256": "48bcdab982429d98e5c5e8591e82f00c92c48f3c5b47d7b6a85cfa8ca5662d7c"
+  },
+  "seconds": 10.637577599999998,
+  "checkpoints": [
+    {
+      "frame": 46,
+      "seconds": 23.574014693483477,
+      "state_file": "state-046.json",
+      "ram_file": "state-046.bin.gz",
+      "state_sha256": "893801b6d063331b1c3fe9f7a386771861a4cef85baf4d48cc58803d6d48989b",
+      "ram_sha256": "c7143da191be152826bd10c98eccadd366bd08dc42696b214fb771c74b51ca4e",
+      "compressed_sha256": "2c366f1170851c220ded42f9dd95966013d9d0656d923fa315bd48e564024a2f",
+      "compressed_bytes": 475481
+    },
+    {
+      "frame": 92,
+      "seconds": 47.64619479677032,
+      "state_file": "state-092.json",
+      "ram_file": "state-092.bin.gz",
+      "state_sha256": "16650f76e23f9b3b333886825f6d9863e7346a751c7b4705dcb0984c4a789f6c",
+      "ram_sha256": "af7ec75d164776273aaea92af8285be65c724806ff52b4a6620ac4d02ab3f88c",
+      "compressed_sha256": "35f54a19626df1167d2a7127accb3e106c46111429c56e9bc5e3b7c9cc1456a5",
+      "compressed_bytes": 477973
+    },
+    {
+      "frame": 138,
+      "seconds": 71.71837490005716,
+      "state_file": "state-138.json",
+      "ram_file": "state-138.bin.gz",
+      "state_sha256": "60d2d65e7d5e29e896ade24bb96da03d1fe5116fe89f1b5ff6ef87824a8bdb54",
+      "ram_sha256": "da548273718db897f8cd8ad19c213e5b96bdcf2ecb642f409eb7e18576a25027",
+      "compressed_sha256": "9a1d43ed9dd53cc4000dd332c1ced67f133341f5bc4e3a17114dcc5b3e94fdb1",
+      "compressed_bytes": 502357
+    },
+    {
+      "frame": 184,
+      "seconds": 95.790555003344,
+      "state_file": "state-184.json",
+      "ram_file": "state-184.bin.gz",
+      "state_sha256": "45c52a8f722d7857d1bc2475aee1e0978872f34f4c5f1949e12ddf5ca9682678",
+      "ram_sha256": "5480cc7c6ada9e0a63f6bb276a7d5823c5677c4017d077fc7f8894989cea8677",
+      "compressed_sha256": "bfd8d8f78723e778ed41fcf84de78c1b9803bac29ac6fef2ff1b4c8fc60c597d",
+      "compressed_bytes": 501197
+    },
+    {
+      "frame": 230,
+      "seconds": 119.86273510663084,
+      "state_file": "state-230.json",
+      "ram_file": "state-230.bin.gz",
+      "state_sha256": "a9c0ed0b99e88425380465ff88a2cc4e93c5960f91516d44223c5a66ebea90e8",
+      "ram_sha256": "1190d171aeec83ac7821f1a0d4f3fd366d006b2723b35c59a96cc4140875cdf5",
+      "compressed_sha256": "35654103e9da8ec20351a44aeaa5cd2fb01df3ea313ef137239a6d380212d631",
+      "compressed_bytes": 494554
+    },
+    {
+      "frame": 260,
+      "seconds": 135.56198300007878,
+      "state_file": "state-260.json",
+      "ram_file": "state-260.bin.gz",
+      "state_sha256": "885f436537e994cff567ff230f02031dfc7ea66512156d889a0ae5f80a13eab3",
+      "ram_sha256": "586571f6a5c8c993e30b5adf8fc01548991531aacb46b6613dc95dbf3005c054",
+      "compressed_sha256": "db98ab898cfbd574aaee4b687016500b25da7fad22fd05c9ea1949a20a07fc02",
+      "compressed_bytes": 505366
+    }
+  ],
+  "sources": [
+    {
+      "path": "js/sequence-seek.mjs",
+      "sha256": "10db585b05ca8e8036a08896c51aa2a0c49a8ebfa1288111f0459d1e1bb489c2"
+    },
+    {
+      "path": "js/opening-sequence.mjs",
+      "sha256": "f726c994d5e4cbeec425df4e1283845150d50df6c2456ef777104198ec64e69a"
+    },
+    {
+      "path": "js/fast-opening-sequence.mjs",
+      "sha256": "c043934772bfebc2edde792000fb4c79f87228c786b5550d696338c9447f2c16"
+    },
+    {
+      "path": "js/fast-machine.mjs",
+      "sha256": "a3ed8e2e85d951dcddb091e46e29576935bea48c8db02945908d3255281bb4b0"
+    },
+    {
+      "path": "js/float32-block.mjs",
+      "sha256": "f19999ceb06fc325a90bcc144e762b24a64d17bd6b878da4a35a20b76eed3df9"
+    },
+    {
+      "path": "js/fast-fpu.mjs",
+      "sha256": "31a8290c31478f1cbdf774504ab2a1ef57ceb83d3f94423a9466fb0d702ff570"
+    },
+    {
+      "path": "js/frozen-devices.mjs",
+      "sha256": "c21a22bc1e73f782d9ed60f064dfcd8ceec3d539638454f919319a59c35fa8e5"
+    },
+    {
+      "path": "js/intersection-machine.mjs",
+      "sha256": "5f5f1cf39ec02b54bc3afe995a54a5e40c012b9d5a3d46ad9076a4144ccd9754"
+    },
+    {
+      "path": "js/finite-arithmetic.mjs",
+      "sha256": "bada868ec6c216befca11639ee88709c1f2a970e5a7353cb9e4992351980c683"
+    },
+    {
+      "path": "js/transcendental-candidate.mjs",
+      "sha256": "4aa1b318dceede86b15c267b965cdd5d39ebe6d2f24c847073246cb729ea0633"
+    },
+    {
+      "path": "js/ucrt-cos-fma.mjs",
+      "sha256": "9f188b93bf6f221505ec9c958b85fb20e125899783a36766341a3bcd2e8fddf4"
+    },
+    {
+      "path": "tools/build-seek-checkpoints.mjs",
+      "sha256": "7e0088834b83d93818d599843f63bdaa5728685889717be615bef3ab95693826"
+    }
+  ],
+  "scope": "Six pre-draw input states from translated original logic. Every one of 275 sampled native full-RAM/register/FPU/image boundaries checked, including serialization round trips. Not DOSBox/backend or arbitrary seek timing proof."
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+ <meta name="description" content="Gamma by MFX. The 1997 DOS 64k intro, reconstructed in JavaScript with its original graphics and music.">
+ <meta name="theme-color" content="#050907">
+ <title>Gamma — MFX</title>
+ <link rel="icon" href="data:,">
+ <link rel="stylesheet" href="./theme.css">
+</head>
+<body>
+<main id="shell">
+ <canvas id="screen" width="320" height="240" aria-label="Gamma, rendered live"></canvas>
+ <section id="gate" aria-label="Gamma by MFX">
+  <img class="cover" src="./assets/home-cover.png" width="320" height="160" alt="">
+  <div class="shade" aria-hidden="true"></div><div class="edge" aria-hidden="true"></div>
+  <header class="masthead"><span>MFX / 1997</span><span class="edition">A DOS intro, brought to the browser</span></header>
+  <div class="gate-content">
+   <p class="eyebrow">Abduction 1997 · 64k intro</p>
+   <h1>gamma</h1>
+   <p class="group">MFX</p>
+   <p class="meta">MS-DOS · June 1997 · JavaScript port</p>
+   <div class="rule" aria-hidden="true"></div>
+   <dl class="credits">
+    <div><dt>Code / tracer</dt><dd>216</dd></div>
+    <div><dt>Design</dt><dd>216 · uncle-x · rainmaker</dd></div>
+    <div><dt>Maps</dt><dd>rainmaker</dd></div>
+    <div class="music"><dt>Music</dt><dd>utuist</dd></div>
+    <div><dt>Player</dt><dd>Cubic Team</dd></div>
+   </dl>
+   <button id="start" class="start" type="button" disabled>Preparing…</button>
+   <output id="audio-status" class="audio-status" role="status">Preparing original music…</output>
+  </div>
+  <footer>
+   <nav class="links" aria-label="Production links">
+    <a href="https://www.pouet.net/prod.php?which=2516" target="_blank" rel="noopener noreferrer">Pouët ↗</a>
+    <a href="https://github.com/kdrapel/mfx-gamma" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+   </nav>
+   <p class="keys"><kbd>space</kbd> pause · <kbd>← →</kbd> sections · <kbd>f</kbd> fullscreen · <kbd>esc</kbd> title</p>
+   <p class="port-note">Original graphics &amp; music. Computed in your browser.</p>
+  </footer>
+ </section>
+ <nav id="hud" class="hud" hidden aria-label="Playback controls">
+  <div class="hud-main">
+   <button id="play" disabled>Play</button><button id="home" class="home-button">Stop</button>
+   <button id="backward" aria-label="Back 15 seconds">−15s</button><button id="forward" aria-label="Forward 15 seconds">+15s</button>
+   <input id="timeline" list="seek-marks" type="range" min="0" max="143" step="0.1" value="0" aria-label="Seek intro">
+   <datalist id="seek-marks"></datalist><output id="time">0:00 / 2:23</output>
+   <button id="fullscreen" aria-pressed="false">Fullscreen</button>
+   <label class="stats-switch"><input id="stats-toggle" type="checkbox" role="switch" aria-controls="geek-panel"> Stats for geeks</label>
+  </div>
+  <div class="hud-sections">
+   <button id="previous" disabled aria-label="Previous section">←</button><button id="next" disabled aria-label="Next section">→</button>
+   <label class="section-label" for="scene">Section</label><select id="scene" disabled aria-label="Jump to section"><option>Loading sections…</option></select>
+   <button id="step" class="secondary" disabled>Next frame</button><button id="restart" class="secondary" disabled>Restart</button>
+   <label><input id="mute" type="checkbox"> Mute</label>
+  </div>
+ </nav>
+ <section id="geek-panel" hidden aria-label="Live playback statistics">
+  <h2>Stats for geeks</h2><output id="stats">Waiting for a frame…</output>
+  <output id="player-details"></output><output id="audio-details"></output><output id="tracker-details"></output>
+  <output id="status" role="status" aria-live="polite">Loading…</output>
+ </section>
+ <output id="notice" hidden role="alert"></output>
+ <div id="loading" hidden role="status" aria-live="polite"><span id="loading-text">Seeking…</span></div>
+</main>
+<script type="module" src="./preview.mjs?v=gamma-home-1"></script>
+</body>
+</html>
