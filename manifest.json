@@ -213,6 +213,11 @@
   ],
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 79,
+      "sha256": "56cbbe39f8db9c5b7098055da0be2533eb5b8e7fa05071598eda677b4b677802"
+    },
+    {
       "path": "README.md",
       "bytes": 2622,
       "sha256": "5d276e26ca96cbcc64970b5ea385e7bc9699f9094fba2ad66b0d248f71e152a6"
